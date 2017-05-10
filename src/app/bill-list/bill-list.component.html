@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <li *ngFor="let bill of billList" class="list-group-item">
+    <button type="button" class="btn btn-success" (click)="sendBill(bill)">Bill {{bill.No}}</button>
+  </li>
+</ul>

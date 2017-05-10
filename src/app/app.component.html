@@ -1,3 +1,25 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ranjith's Reference #1</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <app-bill-list (selectedBill)="selectedBill($event)" [billList]="bills"></app-bill-list>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <app-bill-details [bill]="bill"></app-bill-details>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
